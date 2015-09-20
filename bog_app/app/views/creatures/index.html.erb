@@ -1,0 +1,11 @@
+
+<h1>List of Spooky Creatures</h1>
+
+<% @creatures.each do | creature | %>
+	
+	<div>
+		Name: <%= creature.name %> <br>
+		Description: <% creature.description %>
+	</div>
+
+<% end %>
