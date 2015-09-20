@@ -1,10 +1,11 @@
 
-<h1>List of Spooky Creatures</h1>
+<h1>List of Spooky Creatures</h1><br>
 
 <% @creatures.each do | creature | %>
 	
-	<h2> <%= creature.name %> </h2> <br>
-	<p> <% creature.description %> </p>
-	<%= button_to 'Delete', creature, method: :delete %>
+	<h4> <%= creature.name %> </h4>
+	<p> <%= creature.id %> </p>
+	<p> <%= creature.description %> </p>
+	<%= button_to 'Delete', creature, method: :delete %><br>
 
 <% end %>
