@@ -35,7 +35,7 @@ class CreaturesController < ApplicationController
 		updated_attributes = params.require(:creature).permit(:name, :description)
 		creature.update_attributes(updated_attributes)
 
-		redirect_to '/creatures/#{creature_id}'
+		redirect_to "/creatures/#{creature.id}"
 	end
 
 	def destroy

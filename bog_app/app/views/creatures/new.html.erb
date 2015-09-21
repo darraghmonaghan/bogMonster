@@ -1,8 +1,28 @@
 
-<h1>Form for new monster submission</h1>
 
-<%= form_for @creature do |f| %>
-		<%= f.text_field :name %>
-		<%= f.text_area :description %>
-		<%= f.submit 'Save the Monster!' %>
-<% end %>
+<div class='container'>
+
+	<div class="page-header">
+	  <h1>Build A Monster<small>Spawn your own creepy beast</small></h1>
+	</div>
+
+		<%= form_for @creature do |f| %>
+
+		<div class='row'>
+			<div class='span2'></div>
+			<div class='span8'><%= f.text_field :name %></div>
+			<div class='span2'></div>
+		</div>
+
+		<div class='row'>
+			<div class='span2'></div>
+			<div class='span8'><%= f.text_area :description %></div>
+			<div class='span2'></div>
+		</div>
+		<div class='row'>
+			<div class='span2'></div>
+			<div class='span8'><%= f.submit 'Unleash the Beast!' %></div>
+			<div class='span2'></div>
+		</div>		
+		<% end %>
+</div>
