@@ -1,11 +1,18 @@
 
-<h1>List of Spooky Creatures</h1><br>
 
-<% @creatures.each do | creature | %>
-	
-	<h4> <%= creature.name %> </h4>
-	<p> <%= creature.id %> </p>
-	<p> <%= creature.description %> </p>
-	<%= button_to 'Delete', creature, method: :delete %><br>
+<div class='container'>
 
-<% end %>
+	<div class="page-header">
+	  <h1>List of Spooky Creatures</h1>
+	</div>
+
+		<% @creatures.each do | creature | %>
+			
+			<h4> <%= creature.name %> </h4>
+			<p> <%= creature.id %> </p>
+			<p> <%= creature.description %> </p>
+			<%= button_to 'Delete', creature, method: :delete %><br>
+
+		<% end %>
+
+</div>
